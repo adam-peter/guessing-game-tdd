@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="270fe8f2-da04-4931-a081-c143f8b57a3b" name="Changes" comment="init (TDD part 1)" />
+    <list default="true" id="270fe8f2-da04-4931-a081-c143f8b57a3b" name="Changes" comment="init (TDD part 1)">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/adam/game/GuessingGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/adam/game/GuessingGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/adam/game/GuessingGameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/adam/game/GuessingGameTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +21,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -37,15 +45,16 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
     "last_directory_selection": "/Users/badmood111/Personal/java/project2-guessing-game/src/main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.1492683",
     "project.structure.side.proportion": "0.21514821",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Color Scheme Font",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -102,6 +111,7 @@
       <option name="presentableId" value="Default" />
       <updated>1690722392618</updated>
       <workItem from="1690722393919" duration="5648000" />
+      <workItem from="1690776040842" duration="4513000" />
     </task>
     <task id="LOCAL-00001" summary="init (TDD part 1)">
       <created>1690734207989</created>
