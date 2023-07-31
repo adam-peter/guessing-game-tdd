@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="270fe8f2-da04-4931-a081-c143f8b57a3b" name="Changes" comment="init (TDD part 1)">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="270fe8f2-da04-4931-a081-c143f8b57a3b" name="Changes" comment="Game engine implemented (with tests)">
+      <change afterPath="$PROJECT_DIR$/src/main/com/adam/game/TextConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/com/adam/game/TextConverterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/com/adam/game/GuessingGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/adam/game/GuessingGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/adam/game/GuessingGameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/adam/game/GuessingGameTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,11 +46,12 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_directory_selection": "/Users/badmood111/Personal/java/project2-guessing-game/src/main",
+    "last_directory_selection": "C:/Users/apetrzela/Personal/java/project2-guessing-game-tdd/src/main/com/adam/game",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.1492683",
     "project.structure.side.proportion": "0.21514821",
@@ -63,7 +64,20 @@
       <recent name="com.adam.game" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GuessingGameTest">
+  <component name="RunManager" selected="JUnit.TextConverterTest">
+    <configuration name="GuessingGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.adam.game.GuessingGame" />
+      <module name="project2-guessing-game" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.adam.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GuessingGameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="project2-guessing-game" />
       <extension name="coverage">
@@ -75,6 +89,22 @@
       <option name="PACKAGE_NAME" value="com.adam.game" />
       <option name="MAIN_CLASS_NAME" value="com.adam.game.GuessingGameTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GuessingGameTest.testFourWrongGuesses" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project2-guessing-game" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.adam.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.adam.game" />
+      <option name="MAIN_CLASS_NAME" value="com.adam.game.GuessingGameTest" />
+      <option name="METHOD_NAME" value="testFourWrongGuesses" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -95,9 +125,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TextConverterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project2-guessing-game" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.adam.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.adam.game" />
+      <option name="MAIN_CLASS_NAME" value="com.adam.game.TextConverterTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TextConverterTest" />
+        <item itemvalue="JUnit.GuessingGameTest.testFourWrongGuesses" />
         <item itemvalue="JUnit.GuessingGameTest" />
+        <item itemvalue="Application.GuessingGame" />
         <item itemvalue="JUnit.GuessingGameTest.testRandomNumberGeneration" />
       </list>
     </recent_temporary>
@@ -111,7 +159,12 @@
       <option name="presentableId" value="Default" />
       <updated>1690722392618</updated>
       <workItem from="1690722393919" duration="5648000" />
-      <workItem from="1690776040842" duration="4513000" />
+      <workItem from="1690776040842" duration="6277000" />
+      <workItem from="1690782385559" duration="1090000" />
+      <workItem from="1690785507725" duration="362000" />
+      <workItem from="1690785884070" duration="106000" />
+      <workItem from="1690786001514" duration="3045000" />
+      <workItem from="1690810378244" duration="2794000" />
     </task>
     <task id="LOCAL-00001" summary="init (TDD part 1)">
       <created>1690734207989</created>
@@ -120,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690734207989</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Game engine implemented (with tests)">
+      <option name="closed" value="true" />
+      <created>1690780844847</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1690780844847</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,7 +200,34 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init (TDD part 1)" />
-    <option name="LAST_COMMIT_MESSAGE" value="init (TDD part 1)" />
+    <MESSAGE value="Game engine implemented (with tests)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Game engine implemented (with tests)" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/com/adam/game/GuessingGameTest.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/com/adam/game/GuessingGame.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/com/adam/game/GuessingGame.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="numberOfGuesses" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

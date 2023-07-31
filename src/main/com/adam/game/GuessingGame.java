@@ -1,6 +1,7 @@
 package com.adam.game;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class GuessingGame {
     private final int randomNumber = new Random().nextInt(10) + 1;
@@ -9,7 +10,7 @@ public class GuessingGame {
     public String guess(int guessedNumber) {
         numberOfGuesses++;
 
-        String tryText = numberOfGuesses > 1 ? "tries" : "try";
+        String tryText = numberOfGuesses == 1 ? "try" : "tries";
         String winningMessage = String.format("You got it in %d %s", numberOfGuesses, tryText);
         String response;
 
@@ -33,5 +34,26 @@ public class GuessingGame {
 
     public int getRandomNumber() {
         return randomNumber;
+    }
+
+    public static void main(String[] args) {
+        GuessingGame game = new GuessingGame();
+        Scanner scan = new Scanner(System.in);
+        boolean loopShouldContinue = true;
+
+        do {
+            System.out.print("Enter a number: ");
+            String input = scan.nextLine();
+            if ("q".equals(input)) {
+                loopShouldContinue = false;
+                continue;
+            }
+            String output = game.guess(Integer.parseInt(input));
+            System.out.println(output);
+
+            if (output.contains("You got it") || output.contains("over")) {
+                loopShouldContinue = false;
+            }
+        } while (loopShouldContinue);
     }
 }
